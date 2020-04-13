@@ -1,6 +1,6 @@
 library(plyr)
 library(formattable)
-quarantaene <- read.delim("/Users/Simon/Nextcloud/Lingdrafts/quarantaene.csv")
+quarantaene <- read.delim("./quarantaene.csv")
 ergebnis = data.frame()
 for (bundesland in unique(quarantaene$Aufwachsen)) {
   quarantaene.bundesland <- quarantaene[quarantaene$Aufwachsen==bundesland,]
